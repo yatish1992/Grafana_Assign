@@ -1,9 +1,11 @@
-version: '3.8'
+version: "3.8"
 
 services:
   log_visualization:
+    container_name: log_virsulization
+    image: node:latest
     build: .
     ports:
       - "5000:5000"
-    volumes:
+    volumes: 
       - ./app:/app
